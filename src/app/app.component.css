@@ -1,0 +1,15 @@
+.logo-y-boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-y-boton .logo-itryo {
+    width: 120px;
+    height: 60px;
+}
+
+.logo-y-boton .boton-menu {
+    width: 64px;
+    height: 64px;
+}

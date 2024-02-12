@@ -1,0 +1,14 @@
+.encabezado {
+    text-align: center;
+}
+
+.encabezado h1 {
+    color: rgb(195, 219, 241);
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.contenido .descripcion p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
