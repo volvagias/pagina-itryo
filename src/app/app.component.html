@@ -7,26 +7,16 @@
        
         <!-- Menú oculto -->
         <div *ngIf="modal" class="menu" id="menu">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="">Música</a>
-            </li>
-            <li>
-              <a href="videos.html">Videos</a>
-            </li>
-            <li>
-              <a href="galeria.html">Galería</a>
-            </li>
-            <li>
-              <a href="">Conciertos</a>
-            </li>
+          <li *ngFor="let opcion of opciones">
+            <a (click)="cambiarComponente(opcion.componente)">{{ opcion.nombre }}</a>
+          </li>
         </div>
 
         <br>
         <br>
-        <app-home></app-home>
+        
+        <app-home *ngIf="componenteActual === 'app-home'"></app-home>
+        <app-galeria *ngIf="componenteActual === 'app-galeria'"></app-galeria>
     </div>
 </div>
 
