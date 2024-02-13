@@ -12,5 +12,8 @@ export class AppComponent {
 
   abrirMenu() {
     this.modal=!this.modal;
+    
+    const iconoCerrar = document.getElementById("button") as HTMLElement;
+    iconoCerrar.classList.toggle("cruz-cerrar");
   }
 }
