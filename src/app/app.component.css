@@ -9,7 +9,37 @@
     height: 60px;
 }
 
-.logo-y-boton .boton-menu {
-    width: 64px;
-    height: 64px;
+
+.button {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background-color: rgba(136, 155, 173, 0.205);
+    border-style: none;
+    border-radius: 13px;
+    z-index: 2;
+    
+    background-image: url('/assets/list.svg');
+    background-size: 100%;
 }
+
+.cruz-cerrar {
+    background-image: url('/assets/x-lg.svg');
+}
+
+.menu {
+  /* font-family: inherit; */
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  opacity: 0.9;
+}
+
+
+
+

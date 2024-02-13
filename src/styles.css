@@ -10,6 +10,7 @@ body
   background: #111;
   font-family: 'Roboto', sans-serif;
   color: #33353a;
+  margin-bottom: 90px;
 }
 
 .contenedor
@@ -27,6 +28,36 @@ body
   padding: 20px;
   border-radius: 8px; /* redondeo los bordes de los th */
 }
+
+
+/* FOOTER */
+
+footer
+{
+  color: rgb(195, 219, 241); 
+  font-size: 13.6px;
+  background: rgb(136, 155, 173);
+  padding: 17px 15px;
+  text-align: center;
+  margin-top: 15px;
+  bottom: 0;                    /* Colocar el footer debajo de todo */
+  width: 100%;
+  position: fixed;
+}
+
+footer p {
+  margin-top: 0.5rem;
+}
+
+.iconosFooter
+{
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 25px;
+  float: left;                 /* Coloca el elemento a la izquierda de todo */
+}
+
+
 
 
 

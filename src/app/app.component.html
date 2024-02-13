@@ -2,9 +2,23 @@
     <div class="contenido">
         <div class="logo-y-boton">
             <img class="logo-itryo" src="\assets\logo.png" alt="logo-img">
-            <img class="boton-menu" src="\assets\list.svg" alt="boton-menu">
+            <button (click)="abrirMenu()" class="button" id="button"></button>
         </div>
-        <app-home></app-home>
+       
+        <!-- Menú oculto -->
+        <div *ngIf="modal" class="menu" id="menu">
+          <li *ngFor="let opcion of opciones">
+            <a (click)="cambiarComponente(opcion.componente)">{{ opcion.nombre }}</a>
+          </li>
+        </div>
+
+        <br>
+        <br>
+        
+        <app-home *ngIf="componenteActual === 'app-home'"></app-home>
+        <app-galeria *ngIf="componenteActual === 'app-galeria'"></app-galeria>
     </div>
 </div>
+
+
 
