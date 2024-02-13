@@ -15,7 +15,7 @@ export class AppComponent {
   opciones: any[] = [
     { nombre: 'Home', componente: 'app-home' },
     { nombre: 'galeria', componente: 'app-galeria' },
-    // Agrega más opciones según sea necesario
+    // Agrega más opciones según sea necesario 
   ];
 
   cambiarComponente(componente: string) {
