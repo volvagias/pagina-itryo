@@ -2,9 +2,33 @@
     <div class="contenido">
         <div class="logo-y-boton">
             <img class="logo-itryo" src="\assets\logo.png" alt="logo-img">
-            <img class="boton-menu" src="\assets\list.svg" alt="boton-menu">
+            <button (click)="abrirMenu()" id="toggle-menu" class="boton-menu"><img class="boton-menu" src="\assets\list.svg" alt="boton-menu"></button>
         </div>
+       
+        <!-- Menú oculto -->
+        <div *ngIf="modal" class="menu" id="menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="">Música</a>
+            </li>
+            <li>
+              <a href="videos.html">Videos</a>
+            </li>
+            <li>
+              <a href="galeria.html">Galería</a>
+            </li>
+            <li>
+              <a href="">Conciertos</a>
+            </li>
+        </div>
+
+        <br>
+        <br>
         <app-home></app-home>
     </div>
 </div>
+
+
 
